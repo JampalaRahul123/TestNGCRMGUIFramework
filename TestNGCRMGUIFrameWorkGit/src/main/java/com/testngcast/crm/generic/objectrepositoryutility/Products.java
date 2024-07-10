@@ -7,8 +7,11 @@ public class Products {
 	
 	@FindBy(xpath = "//input[@alt='Create Product...']")
 	private WebElement productLink;
+	
+	@FindBy(name="searchButton")
+	private WebElement ele3;
 
-	protected WebElement getProductLink() {
+	public WebElement getProductLink() {
 		return productLink;
 	}
 }
