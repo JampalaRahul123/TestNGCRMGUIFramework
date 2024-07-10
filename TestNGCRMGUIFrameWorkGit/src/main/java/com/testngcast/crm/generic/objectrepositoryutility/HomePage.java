@@ -29,6 +29,9 @@ public class HomePage {
 	@FindBy(linkText="Contacts")
 	private WebElement contactLink;
 	
+	@FindBy(linkText="Products")
+	private WebElement productLink;
+	
 	@FindBy(linkText="Campaigns")
 	private WebElement campaignLink;
 	
@@ -68,6 +71,15 @@ public class HomePage {
 	public WebElement getMoreLink() {
 		return moreLink;
 	}
+	
+	public WebElement getProductLink() {
+		return productLink;
+	}
+
+	public WebElement getAdminImg() {
+		return adminImg;
+	}
+	
 	// Rule - 5 : Provide Action (Object Utilization)
 	public void navigateToCampaignPage() {
 		Actions action = new Actions(driver);
